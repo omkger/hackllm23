@@ -1,0 +1,9 @@
+langchain
+llama-cpp-python or llama_cpp_python-0.2.20-cp311-cp311-win_amd64.whl
+pypdf
+huggingface
+transformers
+InstructorEmbedding
+torch
+sentence_transformers
+chromadb
