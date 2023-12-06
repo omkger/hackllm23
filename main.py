@@ -43,10 +43,12 @@ splitted_data = loader.load_and_split()
 model_name = "hkunlp/instructor-large"
 model_kwargs = {'device': 'cpu'}
 encode_kwargs = {'normalize_embeddings': True}
+cache_folder = "huggingfaceembeddings_cache"
 embeddings = HuggingFaceInstructEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs,
-    encode_kwargs=encode_kwargs
+    encode_kwargs=encode_kwargs,
+    cache_folder = cache_folder
 )
 
 # create embedding from the documents
